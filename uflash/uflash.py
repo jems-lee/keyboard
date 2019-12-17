@@ -95,7 +95,6 @@ def main():
             shutil.copy(f"{kb.leaf_filename}/keymap.c", kb.qmk_filename)
             shutil.copy(f"{kb.leaf_filename}/layers.json", kb.qmk_filename)
             shutil.copy(f"{kb.leaf_filename}/readme.md", kb.qmk_filename)
-            # subprocess.run(["cp", f"{kb.leaf_filename}*", f"{kb.qmk_filename}"])
         with cd("qmk_firmware"):
             print(subprocess.run(["ls"]))
             if args.execute:
